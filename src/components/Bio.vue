@@ -12,20 +12,19 @@
           </div>
           <div class="col text-center text-md-start">
             <div class="lead">Hello, my name is</div>
-            <h2 class="mt-0 display-4 font-weight-bold">Krzysztof Szumny</h2>
+            <h2 class="mt-0 display-4 font-weight-bold">Magdalena Szumna</h2>
             <div class="bio mb-3">
-              I'm a full-stack developer specialised in frontend and backend
-              development for complex scalable web apps. I write about web
-              development on
-              <router-link class="link-on-bg text-link" :to="{ name: 'blog' }"
-                >my blog</router-link
-              >
-              and regularly
-              <router-link class="link-on-bg text-link" :to="{ name: 'talks' }"
-                >speak</router-link
-              >
-              at various web conferences and meetups. Want to know how I may
-              help your project? Check out my project
+              <p>
+                I am a Senior Quality Assurance Engineer with over 8 years of
+                experience, specializing in manual and automated testing of
+                complex web applications with various test frameworks.
+              </p>
+              <p>
+                Experienced with bootstrapping the testing process in new and
+                existing projects, leading QA teams (with up to 6 people), with
+                additional Software Development background.
+              </p>
+              Check out my project
               <router-link
                 class="link-on-bg text-link"
                 :to="{ name: 'projects' }"

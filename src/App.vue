@@ -19,5 +19,5 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
-@import "./styles/theme-1.scss";
+@import "./styles/theme-4.scss";
 </style>

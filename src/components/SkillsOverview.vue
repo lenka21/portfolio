@@ -17,25 +17,40 @@
       <div class="skills-blocks mx-auto pt-5">
         <div class="row">
           <SkillsBlock
-            group-name="Frontend"
+            class="manual-testing"
+            group-name="Manual Testing"
             :skills="[
-              'Vue.js/Angular/React',
-              'Javascript/Typescript',
-              'Node.js',
-              'HTML/CSS/SASS/LESS',
+              'Preparing tests plans',
+              'Creating scenarios',
+              'Bugs raporting',
+              'Regression testing',
+              'XRay / qTest',
             ]"
-            icon="/images/frontend-icon.svg"
+            icon="/images/manual-testing.svg"
           />
 
           <SkillsBlock
-            group-name="Backend"
-            :skills="['Python/Django', 'C/C++', 'Java', 'PostgresSQL/MySQL']"
-            icon="/images/backend-icon.png"
+            class="automated-testing"
+            group-name="Automated Testing"
+            :skills="[
+              'Cypress / CodeceptJS / Protractor',
+              'Selenium / WebDriver',
+              'Cucumber / BDD',
+              'BrowserStack / Sauce Labs',
+              'Page Object Pattern',
+            ]"
+            icon="/images/automated-testing.svg"
           />
 
           <SkillsBlock
-            group-name="Frontend"
-            :skills="['DevOps', 'Unit Testing', 'Docker', 'Stripe']"
+            group-name="Tools"
+            :skills="[
+              'Git CLI',
+              'GitHub / Bitbucket / GitLab',
+              'Chrome Dev Tools / XPath',
+              'Postman / cURL',
+              'JS / HTML5 / CSS3 / Bootstrap',
+            ]"
             icon="/images/other-skills-icon.svg"
           />
         </div>
@@ -59,4 +74,17 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss"></style>
+<style scoped lang="scss">
+.manual-testing :deep() .skills-icon {
+  width: 46px;
+  margin-top: -2px;
+  filter: invert(100%);
+}
+
+.automated-testing :deep() .skills-icon {
+  width: 46px;
+  filter: invert(1);
+  margin-left: 0px;
+  margin-top: -5px;
+}
+</style>

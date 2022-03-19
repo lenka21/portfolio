@@ -5,51 +5,35 @@
         Great companies I've worked with
       </h3>
       <div class="logos row mb-5">
-        <div class="logo px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4">
-          <a class="logo-link" href="https://www.opera.com/">
+        <div class="logo px-3 col-6 col-md-3 col-lg-3 me-0 px-md-3 px-lg-3">
+          <a class="logo-link" href="https://www.ardentcode.com/">
             <img
               class="grayscale img-fluid svg-ie-fix"
-              src="images/logos/logo-opera.svg"
+              src="images/logos/logo-ardent-code.png"
             />
           </a>
         </div>
-        <div class="logo px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4">
-          <a class="logo-link" href="https://pitchup.com">
+        <div class="logo px-3 col-6 col-md-3 col-lg-3 me-0 px-md-3 px-lg-3">
+          <a class="logo-link" href="https://www.wolterskluwer.com/">
             <img
               class="grayscale img-fluid svg-ie-fix"
-              src="images/logos/logo-pitchup.svg"
+              src="images/logos/logo-wolters-kluwer.svg"
             />
           </a>
         </div>
-        <div class="logo px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4">
-          <a class="logo-link" href="https://www.stxnext.com/">
+        <div class="logo px-3 col-6 col-md-3 col-lg-3 me-0 px-md-3 px-lg-3">
+          <a class="logo-link" href="https://www.obi4wan.com/">
             <img
               class="grayscale img-fluid svg-ie-fix"
-              src="images/logos/logo-stxnext.svg"
+              src="images/logos/logo-obi4wan.png"
             />
           </a>
         </div>
-        <div class="logo px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4">
-          <a class="logo-link" href="https://www.seerene.com/">
+        <div class="logo px-3 col-6 col-md-3 col-lg-3 me-0 px-md-3 px-lg-3">
+          <a class="logo-link" href="https://www.engrave.website/">
             <img
               class="grayscale img-fluid svg-ie-fix"
-              src="images/logos/logo-seerene.svg"
-            />
-          </a>
-        </div>
-        <div class="logo px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4">
-          <a class="logo-link" href="https://steem.com/">
-            <img
-              class="grayscale img-fluid svg-ie-fix"
-              src="images/logos/logo-steem.svg"
-            />
-          </a>
-        </div>
-        <div class="logo px-3 col-6 col-md-4 col-lg-2 me-0 px-md-5 px-lg-4">
-          <a class="logo-link" href="https://www.hogarthww.com/">
-            <img
-              class="grayscale img-fluid svg-ie-fix"
-              src="images/logos/logo-zonza.png"
+              src="images/logos/logo-engrave.png"
             />
           </a>
         </div>

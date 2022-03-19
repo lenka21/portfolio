@@ -2,7 +2,7 @@
   <HireMeFooter />
   <footer class="footer text-light text-center py-2">
     <small class="copyright"
-      >Built with Vue.js 3 & Bootstrap 5. © {{ currentYear }} Krzysztof Szumny.
+      >Built with Vue.js 3 & Bootstrap 5. © {{ currentYear }} Magdalena Szumna.
       All rights reserverd.</small
     >
   </footer>

@@ -1,5 +1,9 @@
+export { default as MediRegs } from "./MediRegs.vue";
+export { default as OBI4Wan } from "./OBI4Wan.vue";
+export { default as One } from "./One.vue";
 export { default as OperaMobile } from "./OperaMobile.vue";
 export { default as Pitchup } from "./Pitchup.vue";
 export { default as PitchupPWA } from "./PitchupPWA.vue";
 export { default as Seerene } from "./Seerene.vue";
 export { default as SpisTresci } from "./SpisTresci.vue";
+export { default as WiadomosciChemiczne } from "./WiadomosciChemiczne.vue";

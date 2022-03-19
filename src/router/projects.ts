@@ -1,13 +1,24 @@
 import { RouteRecordRaw } from "vue-router";
 import {
+  MediRegs,
+  OBI4Wan,
+  One,
   OperaMobile,
-  Pitchup,
-  PitchupPWA,
-  Seerene,
   SpisTresci,
+  WiadomosciChemiczne,
 } from "@/views/projects";
 
 export const projects: RouteRecordRaw[] = [
+  {
+    path: "one",
+    name: "project-one",
+    component: One,
+  },
+  {
+    path: "mediregs",
+    name: "project-mediregs",
+    component: MediRegs,
+  },
   {
     path: "opera-mobile",
     name: "project-opera-mobile",
@@ -19,10 +30,13 @@ export const projects: RouteRecordRaw[] = [
     component: SpisTresci,
   },
   {
-    path: "seerene",
-    name: "project-seerene",
-    component: Seerene,
+    path: "wiadomosci-chemiczne",
+    name: "project-wiadomosci-chemiczne",
+    component: WiadomosciChemiczne,
   },
-  { path: "pithchup.com", name: "project-pitchup.com", component: Pitchup },
-  { path: "pithchup-pwa", name: "project-pitchup-pwa", component: PitchupPWA },
+  {
+    path: "obi4wan",
+    name: "project-obi4wan",
+    component: OBI4Wan,
+  },
 ];

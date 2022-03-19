@@ -4,8 +4,8 @@
   <Companies />
   <Testimonials :testimonials="testimonials" />
   <FeaturedProjects />
-  <LatestBlogPosts />
-  <FeaturedIn />
+  <!-- <LatestBlogPosts /> -->
+  <!-- <FeaturedIn /> -->
 </template>
 
 <script lang="ts">
