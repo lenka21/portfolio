@@ -4,7 +4,7 @@
       <h3 class="section-title font-weight-bold text-center mb-3">
         Skills Overview
       </h3>
-      <div class="section-intro mx-auto text-center mb-5 text-secondary">
+      <!-- <div class="section-intro mx-auto text-center mb-5 text-secondary">
         I have more than 12 years' experience building rich web applications &
         sophisticated applications for clients all over the world. Below is a
         quick overview of my main technical skill sets and tools I use. Want to
@@ -12,7 +12,7 @@
         <router-link class="text-link" :to="{ name: 'resume' }"
           >Check out my online resume</router-link
         >.
-      </div>
+      </div> -->
 
       <div class="skills-blocks mx-auto pt-5">
         <div class="row">
