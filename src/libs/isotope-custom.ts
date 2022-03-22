@@ -7,34 +7,48 @@
 import imagesLoaded from "imagesloaded";
 import Isotope from "isotope-layout";
 
-export function setupIsotopeFilters(): void {
+export function setupIsotopeFilters(filterNames: string[]): void {
   const isotopeContainer: HTMLElement | null =
     document.querySelector(".isotope");
 
   isotopeContainer &&
     imagesLoaded(isotopeContainer, function () {
-      const filterItems = document.querySelectorAll("#filters .type");
+      filterNames.forEach((filterName: string) => {
+        const filterItems = document.querySelectorAll(`#${filterName} .type`);
 
-      const iso = new Isotope(isotopeContainer, {
-        // options
-        itemSelector: ".isotope-item",
-        layoutMode: "fitRows",
-      });
+        const iso = new Isotope(isotopeContainer, {
+          // options
+          itemSelector: ".isotope-item",
+          layoutMode: "fitRows",
+        });
 
-      // filter items on click
-      filterItems.forEach((filterItem) => {
-        filterItem.addEventListener("click", () => {
-          const filterValue = filterItem.getAttribute("data-filter");
+        // filter items on click
+        filterItems.forEach((filterItem) => {
+          filterItem.addEventListener("click", () => {
+            //toggle active class
+            for (const siblingFilterItem of filterItem?.parentNode?.children ||
+              []) {
+              siblingFilterItem.classList.remove("active");
+            }
+            filterItem.classList.add("active");
 
-          // arrange - https://isotope.metafizzy.co/methods.html
-          filterValue && iso.arrange({ filter: filterValue });
+            const activeFilters = filterNames.map(
+              (filterName) =>
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                document
+                  .querySelector(`#${filterName} .type.active`)!
+                  .getAttribute("data-filter")!
+            );
 
-          //toggle active class
-          for (const siblingFilterItem of filterItem?.parentNode?.children ||
-            []) {
-            siblingFilterItem.classList.remove("active");
-          }
-          filterItem.classList.add("active");
+            iso.arrange({
+              filter: function (item) {
+                const matchFilter = (filter: string) =>
+                  filter === "*" || item.classList.contains(filter);
+
+                return activeFilters.every(matchFilter);
+              },
+            });
+          });
         });
       });
     });

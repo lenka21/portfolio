@@ -1,3 +1,5 @@
+import { AllFilterTag } from ".";
+
 export type IProjectFilterTag =
   | "software-development"
   | "Java Script"
@@ -65,7 +67,7 @@ export type ITechnology =
 
 export interface IProjectFilter {
   name: string;
-  tag: IProjectFilterTag;
+  tag: IProjectFilterTag | AllFilterTag;
 }
 
 export interface IProject {

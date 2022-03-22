@@ -1,3 +1,4 @@
+import { allFilterTag } from "./types";
 import { IDB } from "./types/IDB";
 
 const db: IDB = {
@@ -122,6 +123,7 @@ const db: IDB = {
     },
   ],
   projectFilters: [
+    { name: "All", tag: allFilterTag },
     { name: "Automated Testing", tag: "automated-testing" },
     { name: "Manual Testing", tag: "manual-testing" },
     { name: "Software Development", tag: "software-development" },
@@ -136,7 +138,7 @@ const db: IDB = {
       title: "How to use and store your Bitcoins in a secure way",
       description: "",
       date: "Jan 4, 2018",
-      filterTags: ["blockchain", "english"],
+      filterTags: ["blockchain"],
     },
     {
       source: "youtube",
@@ -146,7 +148,7 @@ const db: IDB = {
       title: "Docker - Easy Containerization",
       description: "",
       date: "Jun 23, 2015",
-      filterTags: ["docker", "polish"],
+      filterTags: ["docker"],
     },
     {
       source: "youtube",
@@ -156,7 +158,7 @@ const db: IDB = {
       title: "Git workflow",
       description: "",
       date: "Oct 18, 2018",
-      filterTags: ["git", "polish"],
+      filterTags: ["git"],
     },
     {
       source: "youtube",
@@ -168,7 +170,7 @@ const db: IDB = {
       title: "Blockchain - how it works",
       description: "",
       date: "Jun 24, 2017",
-      filterTags: ["blockchain", "polish"],
+      filterTags: ["blockchain"],
     },
     {
       source: "youtube",
@@ -178,7 +180,7 @@ const db: IDB = {
       title: "Lightning Network",
       description: "",
       date: "Apr 3, 2017",
-      filterTags: ["blockchain", "english"],
+      filterTags: ["blockchain"],
     },
     {
       source: "youtube",
@@ -189,7 +191,7 @@ const db: IDB = {
       conference: "9. Crypto@Cracow meetup",
       description: "",
       date: "Feb 5, 2018",
-      filterTags: ["blockchain", "polish"],
+      filterTags: ["blockchain"],
     },
     // {
     //   source: "youtube",
@@ -201,11 +203,15 @@ const db: IDB = {
     // },
   ],
   talkFilters: [
-    { name: "English", tag: "english" },
-    { name: "Polish", tag: "polish" },
+    { name: "All", tag: allFilterTag },
     { name: "Git", tag: "git" },
     { name: "Docker", tag: "docker" },
     { name: "Blockchain", tag: "blockchain" },
+  ],
+  languageFilters: [
+    { name: "🌎", tag: allFilterTag },
+    { name: "🇬🇧", tag: "English" },
+    { name: "🇵🇱", tag: "Polish" },
   ],
   testimonials: [
     {

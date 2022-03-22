@@ -1,13 +1,9 @@
+import { AllFilterTag, IFilter } from "./IFilters";
 import { ILanguage } from "./ILanguage";
 
-export type ITalkFilterTag =
-  | "polish"
-  | "english"
-  | "git"
-  | "docker"
-  | "blockchain";
+export type ITalkFilterTag = "git" | "docker" | "blockchain" | AllFilterTag;
 
-export interface ITalkFilter {
+export interface ITalkFilter extends IFilter {
   name: string;
   tag: ITalkFilterTag;
 }
