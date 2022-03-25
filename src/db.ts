@@ -16,7 +16,6 @@ const db: IDB = {
       thumbnailLogo: "logo-wolters-kluwer.svg",
       featured: true,
       url: "https://www.wolterskluwer.com/it-it/solutions/one/onelavoro",
-      archivedUrl: "",
       type: "Web Application",
     },
     {
@@ -73,7 +72,6 @@ const db: IDB = {
       thumbnailLogo: "logo-wolters-kluwer.svg",
       featured: true,
       url: "http://www.wkmediregs.com/",
-      archivedUrl: "",
       type: "Web Application",
     },
     {
@@ -97,7 +95,6 @@ const db: IDB = {
       thumbnailLogo: "logo-wolters-kluwer.svg",
       featured: false,
       url: "https://www.wolterskluwer.com/it-it/solutions/one/onelavoro",
-      archivedUrl: "",
       type: "Web Application",
     },
     {
@@ -121,7 +118,6 @@ const db: IDB = {
       thumbnailLogo: "logo-wolters-kluwer.svg",
       featured: false,
       url: "https://www.wolterskluwer.com/it-it/solutions/one/onelavoro",
-      archivedUrl: "",
       type: "Web Application",
     },
   ],
