@@ -4,6 +4,17 @@
   <div class="section-row">
     <h3 class="section-title">Project Background</h3>
     <h3 class="section-title">My role in this project</h3>
+    <p>
+      I've joined this project at the very first stage. Initial team was made of 6 developer and 1 tester - me.
+      At the very beginning, manual tests were the most important as they help ensure whole project is build on strong foundation. At this stage, there was a lot of testing, as developers were able to perform very well without any technical debt in the project.
+
+      tester. In the
+      <ul>
+        <li>1 tester vs 6. developers</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </p>
   </div>
 
   <div class="section-row">
@@ -36,7 +47,7 @@
 import { PropType, defineComponent } from "vue";
 import { CoverImage, OtherProjectCaseStudies, Testimonial } from "@/components";
 import { useDB } from "@/composables";
-import { IProject, ITestimonial } from "@/types";
+import type { IProject, ITestimonial } from "@/types";
 
 export default defineComponent({
   name: "OperaMobile",
